@@ -21,7 +21,7 @@ jobs:
       name: Download files
       command: |
        source /tools/Xilinx/Vivado/2020.1/settings64.sh
-       vivado -mode tcl -source matt.tcl        
+       vivado -mode tcl -source sim.tcl        
       type: miscellaneous    
 workflows:
  complete-build-test:
