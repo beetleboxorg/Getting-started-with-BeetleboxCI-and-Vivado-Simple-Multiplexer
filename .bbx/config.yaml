@@ -3,10 +3,10 @@ runners:
   image: ubuntu-vitis-2020-1
 
 jobs:   
- build-SW-emu:
+ build_run_sim:
   runner: AWS-runner
   type:
-   build: software
+   build: hardware
   output:
    artifact:
     - ./project_ci_sim.xpr
@@ -26,4 +26,4 @@ jobs:
 workflows:
  complete-build-test:
   jobs:
-   - build-SW-emu
+   - build_run_sim
