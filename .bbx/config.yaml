@@ -1,0 +1,30 @@
+runners:
+ AWS-runner:
+  image: ubuntu-vitis-2020-1
+
+jobs:   
+ build-SW-emu:
+  runner: AWS-runner
+  type:
+   build: software
+  output:
+   artifact:
+    - ./project_sim.sim
+    - ./project_ci_sim.xpr
+    - ./project_ci_sim.cache
+    - ./project_ci_sim.hbs
+    - ./project_ci_sim.hw
+    - ./project_ci_sim.ip_user_files
+    - ./project_ci_sim.sim
+    - ./project_ci_sim.srcs 
+  steps:
+   - run:
+      name: Download files
+      command: |
+       source /tools/Xilinx/Vivado/2020.1/settings64.sh
+       vivado -mode tcl -source matt.tcl        
+      type: miscellaneous    
+workflows:
+ complete-build-test:
+  jobs:
+   - build-SW-emu
