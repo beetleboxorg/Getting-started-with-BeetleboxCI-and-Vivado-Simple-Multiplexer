@@ -9,7 +9,6 @@ jobs:
    build: software
   output:
    artifact:
-    - ./project_sim.sim
     - ./project_ci_sim.xpr
     - ./project_ci_sim.cache
     - ./project_ci_sim.hbs
