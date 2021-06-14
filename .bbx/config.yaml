@@ -9,12 +9,12 @@ jobs:
    build: hardware
   output:
    artifact:
-    - ./project_ci_sim.xpr
-    - ./project_ci_sim.cache
-    - ./project_ci_sim.hw
-    - ./project_ci_sim.ip_user_files
-    - ./project_ci_sim.sim
-    - ./project_ci_sim.srcs 
+    - /tools/Xilinx/Vivado/2020.1/workspace/project_ci_sim.xpr
+    - /tools/Xilinx/Vivado/2020.1/workspace/project_ci_sim.cache
+    - /tools/Xilinx/Vivado/2020.1/workspace/project_ci_sim.hw
+    - /tools/Xilinx/Vivado/2020.1/workspace/project_ci_sim.ip_user_files
+    - /tools/Xilinx/Vivado/2020.1/workspace/project_ci_sim.sim
+    - /tools/Xilinx/Vivado/2020.1/workspace/project_ci_sim.srcs
   steps:
    - run:
       name: Download files
