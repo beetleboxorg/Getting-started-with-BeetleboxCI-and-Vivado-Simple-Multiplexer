@@ -19,7 +19,7 @@ jobs:
     - ./project_ci_sim.srcs 
   steps:
    - run:
-      name: Download files
+      name: Run tcl
       command: |
        source /tools/Xilinx/Vivado/2020.1/settings64.sh
        vivado -mode tcl -source sim.tcl        
