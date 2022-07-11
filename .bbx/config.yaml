@@ -1,9 +1,10 @@
 runners:
  AWS-runner:
-  image: ubuntu-vitis-2020-1
-
+  image: ip-192-168-102-216:5000/ubuntu-vitis-2020-1
+  
 jobs:   
  build_run_sim:
+  resource_spec: small 
   runner: AWS-runner
   type:
    build: hardware
