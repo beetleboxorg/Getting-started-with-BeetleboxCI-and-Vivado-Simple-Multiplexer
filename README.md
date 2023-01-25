@@ -1,4 +1,4 @@
-# Getting started with BeeltleboxCI and Vivado: Simple Multiplexer
+# Getting started with BeetleboxCI and Vivado: Simple Multiplexer
 
 This is a tutorial designed to show to get started using BeetleboxCI and Vivado, in which we will cover the following: 
 
